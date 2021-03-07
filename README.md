@@ -33,7 +33,10 @@ Create a wrapper to bypass the restrictions to modify private parameters.
 | 10.3.1|:white_check_mark:|
 
 ### How to use
-1. Add this repository to your project as a [submodule](https://git-scm.com/book/en/v2/Git-Tools-Submodules)
+1. Add wrapper to your project
+    - as a [submodule](https://git-scm.com/book/en/v2/Git-Tools-Submodules)
+    - download [latest release](https://github.com/inc8877/GraphicsConfigurator/releases) source code
+    - download [latest](https://github.com/inc8877/GraphicsConfigurator/releases) `.dll`
 2. Include wrapper library in code
 3. Change any parameters of the URP Asset in one line. In the bag :clap:
 
