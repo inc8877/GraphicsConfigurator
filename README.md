@@ -12,7 +12,7 @@ API for managing URP parameters, including those that are closed for modificatio
 <p>
 Unity closed access to change important parameters such as shadows casting, shadow resolution, lighting modes, etc.
 
-If you want to give the user the ability to customize the resolution of shadows, then the suggestion from unit sounds like this: ***"create multiple assets and and rearrange them"***
+If you want to give the user the ability to customize the resolution of shadows, then the suggestion from unit sounds like this: ***"create multiple assets and rearrange them"***
 
 If you follow this way, you will have to create hundreds of pipeline assets to give users the ability to customize the graphics settings.
 
