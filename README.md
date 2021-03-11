@@ -1,5 +1,5 @@
 # GraphicsConfigurator
-API for managing URP parameters, including those that are closed for modification
+API for managing URP asset parameters, including hacking parameters that are forbidden to change.
 
 - [Compatibility](#compatibility)
 - [How to use](#how-to-use)
