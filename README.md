@@ -4,6 +4,7 @@ API for managing URP asset parameters, including hacking of parameters that are 
 - [Compatibility](#compatibility)
 - [How to use](#how-to-use)
 - [Examples](#examples)
+- [Tested devices](#tested-devices)
 - [Known issues](#known-issues)
 
 
@@ -75,6 +76,13 @@ URPA.MainLightShadowsCasting(true);
 URPA.Cascade3Split(new Vector2(0.1f, 0.3f));
 // ...
 ```
+
+### Tested devices
+|     GPU    |   CPU  |     OS    | Graphics API | Backend | .Net |
+|:----------:|:------:|:---------:|:------------:|:-------:|:----:|
+|   SD 855   | Adreno 640 | Android 10.3.8 | Vulkan | IL2CPP | 4.x |
+|   SD 845   | Adreno 630 | Android 10.3.7 | Vulkan | IL2CPP | 4.x |
+| i7 6700HQ | AMD Randeon Pro 450 | macOS 11.2.1 | Metal | IL2CPP | 4.x |
 
 ### Known issues
 - When there is a change in the additional light rendering mode with the display of the target asset in the inspector,
