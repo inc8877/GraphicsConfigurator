@@ -78,7 +78,7 @@ URPA.Cascade3Split(new Vector2(0.1f, 0.3f));
 ```
 
 ### Tested devices
-|     GPU    |   CPU  |     OS    | Graphics API | Backend | .Net |
+|     CPU    |   GPU  |     OS    | Graphics API | Backend | .Net |
 |:----------:|:------:|:---------:|:------------:|:-------:|:----:|
 |   SD 855   | Adreno 640 | Android 10.3.8 | Vulkan | IL2CPP | 4.x |
 |   SD 845   | Adreno 630 | Android 10.3.7 | Vulkan | IL2CPP | 4.x |
