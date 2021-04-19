@@ -23,6 +23,9 @@ namespace GraphicsConfigurator.Core.URP
         private static readonly FieldInfo m_AdditionalLightsRenderingMode = getFieldInfo("m_AdditionalLightsRenderingMode");
         private static readonly FieldInfo m_AdditionalLightShadowsSupported = getFieldInfo("m_AdditionalLightShadowsSupported");
         private static readonly FieldInfo m_AdditionalLightsShadowmapResolution = getFieldInfo("m_AdditionalLightsShadowmapResolution");
+        private static readonly FieldInfo m_AdditionalLightsShadowResolutionTierLow = getFieldInfo("m_AdditionalLightsShadowResolutionTierLow");
+        private static readonly FieldInfo m_AdditionalLightsShadowResolutionTierMedium = getFieldInfo("m_AdditionalLightsShadowResolutionTierMedium");
+        private static readonly FieldInfo m_AdditionalLightsShadowResolutionTierHigh = getFieldInfo("m_AdditionalLightsShadowResolutionTierHigh");
         private static readonly FieldInfo m_Cascade2Split = getFieldInfo("m_Cascade2Split");
         private static readonly FieldInfo m_Cascade3Split = getFieldInfo("m_Cascade3Split");
         private static readonly FieldInfo m_Cascade4Split = getFieldInfo("m_Cascade4Split");
@@ -105,6 +108,24 @@ namespace GraphicsConfigurator.Core.URP
         {
             m_AdditionalLightsShadowmapResolution.SetValue(asset, resolution);
             return (ShadowResolution)asset.additionalLightsShadowmapResolution;
+        }
+
+        internal static int additionalLightsShadowResolutionTierLow(UniversalRenderPipelineAsset asset, int resolution)
+        {
+            m_AdditionalLightsShadowResolutionTierLow.SetValue(asset, resolution);
+            return asset.additionalLightsShadowResolutionTierLow;
+        }
+        
+        internal static int additionalLightsShadowResolutionTierMedium(UniversalRenderPipelineAsset asset, int resolution)
+        {
+            m_AdditionalLightsShadowResolutionTierMedium.SetValue(asset, resolution);
+            return asset.additionalLightsShadowResolutionTierMedium;
+        }
+        
+        internal static int additionalLightsShadowResolutionTierHigh(UniversalRenderPipelineAsset asset, int resolution)
+        {
+            m_AdditionalLightsShadowResolutionTierHigh.SetValue(asset, resolution);
+            return asset.additionalLightsShadowResolutionTierHigh;
         }
 
         #endregion

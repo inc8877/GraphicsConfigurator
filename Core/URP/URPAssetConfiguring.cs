@@ -56,11 +56,21 @@ namespace GraphicsConfigurator.Core.URP
         public LightRenderingMode AdditionalLightsMode(LightRenderingMode mode) =>
             URPFunctionality.additionalLightsRenderingMode(targetAsset, mode);
 
+        /// <summary>
+        /// (Per Object Limit)
+        /// </summary>
+        /// <param name="count"></param>
+        /// <returns></returns>
         public int MaxAdditionalLightsCount(int count) => URPFunctionality.additionalLightsCount(targetAsset, count);
 
         public bool AdditionalLightsShadowsCasting(bool state) =>
             URPFunctionality.supportsAdditionalLightShadows(targetAsset, state);
 
+        /// <summary>
+        /// (Shadow Atlas Resolution)
+        /// </summary>
+        /// <param name="resolution"></param>
+        /// <returns></returns>
         public ShadowResolution AddtionalLightShadowResolution(ShadowResolution resolution) =>
             URPFunctionality.additionalLightsShadowmapResolution(targetAsset, resolution);
 
