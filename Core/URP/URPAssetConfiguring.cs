@@ -74,6 +74,15 @@ namespace GraphicsConfigurator.Core.URP
         public ShadowResolution AddtionalLightShadowResolution(ShadowResolution resolution) =>
             URPFunctionality.additionalLightsShadowmapResolution(targetAsset, resolution);
 
+        public int AdditionalLightsShadowResolutionTierLow(int resolution) =>
+            URPFunctionality.additionalLightsShadowResolutionTierLow(targetAsset, resolution);
+        
+        public int AdditionalLightsShadowResolutionTierMedium(int resolution) =>
+            URPFunctionality.additionalLightsShadowResolutionTierMedium(targetAsset, resolution);
+        
+        public int additionalLightsShadowResolutionTierHigh(int resolution) =>
+            URPFunctionality.additionalLightsShadowResolutionTierHigh(targetAsset, resolution);
+
         #endregion
 
         #region Shadows
@@ -96,6 +105,19 @@ namespace GraphicsConfigurator.Core.URP
 
         #endregion
 
+        #region Post-processing
+
+        public ColorGradingMode ColorGradingMode(ColorGradingMode mode) =>
+            URPFunctionality.colorGradingMode(targetAsset, mode);
+
+        public int ColorGradingLutSize(int size) =>
+            URPFunctionality.colorGradingLutSize(targetAsset, size);
+
+        public bool UseFastSRGBLinearConversion(bool state) =>
+            URPFunctionality.useFastSRGBLinearConversion(targetAsset, state);
+
+        #endregion
+        
         #region Advanced
 
         public bool SRPBatcher(bool state) => URPFunctionality.useSRPBatcher(targetAsset, state);

@@ -59,7 +59,25 @@ namespace GraphicsConfigurator.Tests
         
             Configuring.CurrentURPA.SoftShadows(true);
             yield return new WaitForSeconds(0.5f);
+
+            Configuring.CurrentURPA.AdditionalLightsShadowResolutionTierLow(512);
+            yield return new WaitForSeconds(0.5f);
+            
+            Configuring.CurrentURPA.AdditionalLightsShadowResolutionTierMedium(1024);
+            yield return new WaitForSeconds(0.5f);
         
+            Configuring.CurrentURPA.additionalLightsShadowResolutionTierHigh(2048);
+            yield return new WaitForSeconds(0.5f);
+
+            Configuring.CurrentURPA.ColorGradingMode(ColorGradingMode.HighDynamicRange);
+            yield return new WaitForSeconds(0.5f);
+            
+            Configuring.CurrentURPA.ColorGradingLutSize(128);
+            yield return new WaitForSeconds(0.5f);
+            
+            Configuring.CurrentURPA.UseFastSRGBLinearConversion(true);
+            yield return new WaitForSeconds(0.5f);
+            
             Configuring.CurrentURPA.SRPBatcher(true);
             yield return new WaitForSeconds(0.5f);
         
@@ -118,6 +136,24 @@ namespace GraphicsConfigurator.Tests
             Configuring.CurrentURPA.SoftShadows(false);
             yield return new WaitForSeconds(0.5f);
         
+            Configuring.CurrentURPA.AdditionalLightsShadowResolutionTierLow(256);
+            yield return new WaitForSeconds(0.5f);
+            
+            Configuring.CurrentURPA.AdditionalLightsShadowResolutionTierMedium(512);
+            yield return new WaitForSeconds(0.5f);
+        
+            Configuring.CurrentURPA.additionalLightsShadowResolutionTierHigh(1024);
+            yield return new WaitForSeconds(0.5f);
+
+            Configuring.CurrentURPA.ColorGradingMode(ColorGradingMode.LowDynamicRange);
+            yield return new WaitForSeconds(0.5f);
+            
+            Configuring.CurrentURPA.ColorGradingLutSize(32);
+            yield return new WaitForSeconds(0.5f);
+            
+            Configuring.CurrentURPA.UseFastSRGBLinearConversion(false);
+            yield return new WaitForSeconds(0.5f);
+            
             Configuring.CurrentURPA.SRPBatcher(false);
             yield return new WaitForSeconds(0.5f);
         

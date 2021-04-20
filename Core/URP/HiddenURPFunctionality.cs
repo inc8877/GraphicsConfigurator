@@ -30,6 +30,7 @@ namespace GraphicsConfigurator.Core.URP
         private static readonly FieldInfo m_Cascade3Split = getFieldInfo("m_Cascade3Split");
         private static readonly FieldInfo m_Cascade4Split = getFieldInfo("m_Cascade4Split");
         private static readonly FieldInfo m_SoftShadowsSupported = getFieldInfo("m_SoftShadowsSupported");
+        private static readonly FieldInfo m_UseFastSRGBLinearConversion = getFieldInfo("m_UseFastSRGBLinearConversion");
         private static readonly FieldInfo m_MixedLightingSupported = getFieldInfo("m_MixedLightingSupported");
 
         private static FieldInfo getFieldInfo(string name) => pipelineAssetType.GetField(name, flags);
@@ -158,6 +159,16 @@ namespace GraphicsConfigurator.Core.URP
 
         #endregion
 
+        #region Post-processing
+
+        internal static bool useFastSRGBLinearConversion(UniversalRenderPipelineAsset asset, bool state)
+        {
+            m_UseFastSRGBLinearConversion.SetValue(asset, state);
+            return asset.useFastSRGBLinearConversion;
+        }
+
+        #endregion
+        
         #region Advanced
 
         internal static bool supportsMixedLighting(UniversalRenderPipelineAsset asset, bool state)

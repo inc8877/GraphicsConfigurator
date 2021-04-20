@@ -47,6 +47,16 @@ namespace GraphicsConfigurator.Core.URP
             asset.shadowNormalBias = bias;
 
         #endregion
+
+        #region Post-processing
+
+        internal static ColorGradingMode colorGradingMode(UniversalRenderPipelineAsset asset, ColorGradingMode mode) =>
+            asset.colorGradingMode = mode;
+
+        internal static int colorGradingLutSize(UniversalRenderPipelineAsset asset, int size) =>
+            asset.colorGradingLutSize = size;
+
+        #endregion
         
         #region Advanced
 
