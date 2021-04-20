@@ -66,7 +66,10 @@ namespace GraphicsConfigurator.Core.URP
         internal static bool supportsDynamicBatching(UniversalRenderPipelineAsset asset, bool state) =>
             asset.supportsDynamicBatching = state;
 
+        internal static ShaderVariantLogLevel shaderVariantLogLevel(UniversalRenderPipelineAsset asset,
+            ShaderVariantLogLevel logLevel) => asset.shaderVariantLogLevel = logLevel;
+
         #endregion
-        
+
     }
 }

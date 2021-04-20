@@ -126,6 +126,9 @@ namespace GraphicsConfigurator.Core.URP
         
         public bool MixedLighting(bool state) => URPFunctionality.supportsMixedLighting(targetAsset, state);
 
+        public ShaderVariantLogLevel ShaderVariantLogLevel(ShaderVariantLogLevel logLevel) =>
+            URPFunctionality.shaderVariantLogLevel(targetAsset, logLevel);
+
         #endregion
 
     }

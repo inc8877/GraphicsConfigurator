@@ -86,6 +86,10 @@ namespace GraphicsConfigurator.Tests
         
             Configuring.CurrentURPA.MixedLighting(true);
             yield return new WaitForSeconds(0.5f);
+
+            Configuring.CurrentURPA.ShaderVariantLogLevel(ShaderVariantLogLevel.OnlyUniversalRPShaders);
+            yield return new WaitForSeconds(0.5f);
+            
         }
     
         [UnityTest]
@@ -161,6 +165,9 @@ namespace GraphicsConfigurator.Tests
             yield return new WaitForSeconds(0.5f);
         
             Configuring.CurrentURPA.MixedLighting(false);
+            yield return new WaitForSeconds(0.5f);
+            
+            Configuring.CurrentURPA.ShaderVariantLogLevel(ShaderVariantLogLevel.Disabled);
             yield return new WaitForSeconds(0.5f);
         }
     }
