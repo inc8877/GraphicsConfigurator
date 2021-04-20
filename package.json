@@ -1,0 +1,26 @@
+{
+  "name": "com.inc8877.graphicsconfigurator",
+  "version": "1.1.0",
+  "displayName": "GraphicsConfigurator",
+  "description": "API for managing URP asset parameters, including hacking of parameters that are forbidden to change",
+  "dependencies": {
+    "com.unity.render-pipelines.universal": "11.0.0"
+  },
+  "keywords": [
+    "universal-render-pipeline",
+    "configuring",
+    "settings",
+    "workaround",
+    "wrapper"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/inc8877/GraphicsConfigurator.git"
+  },
+  "author": {
+    "name": "Volodymyr Bozhko",
+    "email": "inc8877@gmail.com",
+    "url": "https://github.com/inc8877"
+  },
+  "license": "MIT"
+}

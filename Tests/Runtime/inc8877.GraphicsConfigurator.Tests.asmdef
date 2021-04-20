@@ -1,11 +1,11 @@
 {
-    "name": "GraphicsConfigurator.Tests",
+    "name": "inc8877.GraphicsConfigurator.Tests",
     "rootNamespace": "",
     "references": [
         "UnityEngine.TestRunner",
         "UnityEditor.TestRunner",
-        "GraphicsConfigurator",
-        "Unity.RenderPipelines.Universal.Runtime"
+        "Unity.RenderPipelines.Universal.Runtime",
+        "inc8877.GraphicsConfigurator"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],
