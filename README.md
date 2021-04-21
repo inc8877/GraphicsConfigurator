@@ -8,6 +8,10 @@ API for managing URP asset parameters, including hacking of parameters that are 
   - [Table of Contents](#table-of-contents)
   - [Download](#download)
   - [How to use](#how-to-use)
+  - [Installation](#installation)
+    - [Install via OpenUPM](#install-via-openupm)
+    - [Install via Git URL](#install-via-git-url)
+    - [Include GraphicsConfigurator `.dll` into the project](#include-graphicsconfigurator-dll-into-the-project)
   - [Examples](#examples)
   - [Tested devices](#tested-devices)
   - [Known issues](#known-issues)
@@ -40,12 +44,35 @@ Create a wrapper to bypass the restrictions to modify private parameters.
 
 ## How to use
 
-1. Add wrapper to your project (find a suitable version [here](#download))
-    - as a [submodule](https://git-scm.com/book/en/v2/Git-Tools-Submodules)
-    - download [latest release](https://github.com/inc8877/GraphicsConfigurator/releases) source code
-    - download [latest](https://github.com/inc8877/GraphicsConfigurator/releases) `.dll`
+1. Add wrapper to your project ([installation](#installation))
 2. Include wrapper library in code
 3. Change any parameters of the URP Asset in one line. In the bag :clap:
+
+## Installation
+
+### Install via OpenUPM
+
+The package is available on the [openupm](https://openupm.com) registry. It's recommended to install it via [openupm-cli](https://github.com/openupm/openupm-cli).
+
+```c#
+openupm add com.inc8877.graphicsconfigurator
+```
+
+### Install via Git URL
+
+To install this package, you need to edit your Unity project's `Packages/manifest.json` and add this repository as a dependency. You can also specify the commit hash or tag like this:
+
+```c#
+{
+  "dependencies": {
+    "com.inc8877.graphicsconfigurator": "https://github.com/inc8877/GraphicsConfigurator.git",
+   }
+}
+```
+
+### Include GraphicsConfigurator `.dll` into the project
+
+Add `.dll` to your project, you can find it in [every release](https://github.com/inc8877/GraphicsConfigurator/releases). You can find a suitable version [here](#download)
 
 ## Examples
 
