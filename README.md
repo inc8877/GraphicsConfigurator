@@ -1,4 +1,8 @@
-# GraphicsConfigurator
+<p align="center">
+  <img width="768" height="432" src="https://user-images.githubusercontent.com/29813954/115538937-11fc8f00-a2a5-11eb-8547-b8f9d02c7278.png">
+</p>
+
+# GraphicsConfigurator [![openupm](https://img.shields.io/npm/v/com.inc8877.graphicsconfigurator?label=openupm&registry_uri=https://package.openupm.com)](https://openupm.com/packages/com.inc8877.graphicsconfigurator/)
 
 API for managing URP asset parameters, including hacking of parameters that are forbidden to change.
 
