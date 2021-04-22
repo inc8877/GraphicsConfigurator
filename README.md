@@ -1,8 +1,10 @@
 <p align="center">
-  <img width="600" height="338" src="https://user-images.githubusercontent.com/29813954/115538937-11fc8f00-a2a5-11eb-8547-b8f9d02c7278.png">
+  <img src="https://user-images.githubusercontent.com/29813954/115538937-11fc8f00-a2a5-11eb-8547-b8f9d02c7278.png">
 </p>
 
-# GraphicsConfigurator [![openupm](https://img.shields.io/npm/v/com.inc8877.graphicsconfigurator?label=openupm&registry_uri=https://package.openupm.com)](https://openupm.com/packages/com.inc8877.graphicsconfigurator/)
+# GraphicsConfigurator
+
+[![openupm](https://img.shields.io/npm/v/com.inc8877.graphicsconfigurator?label=openupm&registry_uri=https://package.openupm.com)](https://openupm.com/packages/com.inc8877.graphicsconfigurator/)
 
 API for managing URP asset parameters, including hacking of parameters that are forbidden to change.
 
@@ -49,7 +51,7 @@ Create a wrapper to bypass the restrictions to modify private parameters.
 ## How to use
 
 1. Add wrapper to your project ([installation](#installation))
-2. Include wrapper library in code
+2. Include wrapper library in code ([how](#examples))
 3. Change any parameters of the URP Asset in one line. In the bag :clap:
 
 ## Installation
@@ -64,7 +66,7 @@ openupm add com.inc8877.graphicsconfigurator
 
 ### Install via Git URL
 
-To install this package, you need to edit your Unity project's `Packages/manifest.json` and add this repository as a dependency. You can also specify the commit hash or tag like this:
+Open `Packages/manifest.json` with your favorite text editor. Add the following line to the dependencies block.
 
 ```c#
 {
