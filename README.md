@@ -5,6 +5,7 @@
 # GraphicsConfigurator
 
 [![openupm](https://img.shields.io/npm/v/com.inc8877.graphicsconfigurator?label=openupm&registry_uri=https://package.openupm.com)](https://openupm.com/packages/com.inc8877.graphicsconfigurator/)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/f6b7fb15b9f24273b303c3b79409cbfb)](https://www.codacy.com/gh/inc8877/GraphicsConfigurator/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=inc8877/GraphicsConfigurator&amp;utm_campaign=Badge_Grade)
 
 API for managing URP asset parameters, including hacking of parameters that are forbidden to change.
 
