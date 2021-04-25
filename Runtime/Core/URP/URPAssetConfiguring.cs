@@ -13,7 +13,8 @@ namespace GraphicsConfigurator.Core.URP
         {
             targetAsset = asset;
         }
-        public UniversalRenderPipelineAsset targetAsset;
+
+        public UniversalRenderPipelineAsset targetAsset { get; internal set; }
 
         #endregion
 
@@ -130,6 +131,6 @@ namespace GraphicsConfigurator.Core.URP
             URPFunctionality.shaderVariantLogLevel(targetAsset, logLevel);
 
         #endregion
-
+        
     }
 }

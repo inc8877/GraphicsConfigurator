@@ -3,7 +3,7 @@ using UnityEngine.Rendering.Universal;
 
 namespace GraphicsConfigurator.API.URP
 {
-    public class Configuring
+    public static class Configuring
     {
         /// <summary>
         /// Managing the active pipeline asset
