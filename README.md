@@ -46,7 +46,7 @@ Create a wrapper to bypass the restrictions to modify private parameters.
 
 |      URP       |                                        LINK                                         |
 | :------------: | :---------------------------------------------------------------------------------: |
-|     11.0.0     | [:arrow_down:](https://github.com/inc8877/GraphicsConfigurator/releases/tag/v1.1.0) |
+|     11.0.0     | [:arrow_down:](https://github.com/inc8877/GraphicsConfigurator/releases/tag/v1.1.1) |
 | 10.3.1, 10.3.2 | [:arrow_down:](https://github.com/inc8877/GraphicsConfigurator/releases/tag/v1.0.0) |
 
 ## How to use
