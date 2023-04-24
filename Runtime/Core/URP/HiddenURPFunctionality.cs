@@ -30,7 +30,8 @@ namespace GraphicsConfigurator.Core.URP
         private static readonly FieldInfo m_Cascade3Split = getFieldInfo("m_Cascade3Split");
         private static readonly FieldInfo m_Cascade4Split = getFieldInfo("m_Cascade4Split");
         private static readonly FieldInfo m_SoftShadowsSupported = getFieldInfo("m_SoftShadowsSupported");
-        private static readonly FieldInfo m_UseFastSRGBLinearConversion = getFieldInfo("m_UseFastSRGBLinearConversion");
+        private static readonly FieldInfo m_SoftShadowQuality = getFieldInfo("m_SoftShadowQuality");
+		private static readonly FieldInfo m_UseFastSRGBLinearConversion = getFieldInfo("m_UseFastSRGBLinearConversion");
         private static readonly FieldInfo m_MixedLightingSupported = getFieldInfo("m_MixedLightingSupported");
 
         private static FieldInfo getFieldInfo(string name) => pipelineAssetType.GetField(name, flags);
@@ -155,6 +156,12 @@ namespace GraphicsConfigurator.Core.URP
         {
             m_SoftShadowsSupported.SetValue(asset, state);
             return asset.supportsSoftShadows;
+        }
+
+        internal static SoftShadowQuality softShadowQuality(UniversalRenderPipelineAsset asset, SoftShadowQuality quality)
+        {
+            m_SoftShadowQuality.SetValue(asset, quality);
+            return (SoftShadowQuality)m_SoftShadowQuality.GetValue(asset);
         }
 
         #endregion
