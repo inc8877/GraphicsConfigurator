@@ -104,11 +104,13 @@ namespace GraphicsConfigurator.Core.URP
         
         public bool SoftShadows(bool state) => URPFunctionality.supportsSoftShadows(targetAsset, state);
 
-        #endregion
+        public SoftShadowQuality SoftShadowQuality(SoftShadowQuality quality) => URPFunctionality.softShadowQuality(targetAsset, quality);
 
-        #region Post-processing
+		#endregion
 
-        public ColorGradingMode ColorGradingMode(ColorGradingMode mode) =>
+		#region Post-processing
+
+		public ColorGradingMode ColorGradingMode(ColorGradingMode mode) =>
             URPFunctionality.colorGradingMode(targetAsset, mode);
 
         public int ColorGradingLutSize(int size) =>
